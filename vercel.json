@@ -8,22 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1",
-      "headers": {
-        "cache-control": "max-age=0, s-maxage=86400, stale-while-revalidate"
-      }
-    },
-    {
-      "src": "/media/(.*)",
-      "dest": "/media/$1",
-      "headers": {
-        "cache-control": "max-age=0, s-maxage=86400, stale-while-revalidate"
-      }
-    },
-    {
       "src": "/(.*)",
       "dest": "manage.py"
-    }
+      }
   ]
-}
+    }
